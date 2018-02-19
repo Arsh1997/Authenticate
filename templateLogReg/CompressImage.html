@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Compression test</title>
+</head>
+<body>
+
+
+<div>
+
+    <h2> Enter URL: </h2> <input id="myURL" type="url"><button type="button" onclick="ImageResize()">Resize</button>
+
+
+    <script type="text/javascript" >
+
+        function ImageResize() {
+            var img = document.createElement('img');
+            var string = "" +document.getElementById("myURL");
+            img.src = document.getElementById("myURL");
+            document.body.appendChild(img);
+
+            myimg = document.getElementById('img');
+            myimg.style.height = "50px";
+            myimg.style.width = "50px";
+            return myimg;
+        }
+
+    </script>
+</div>
+</body>
+</html>
